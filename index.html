@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Metadata para PWA -->
+    <!-- Modifica color barra de estado Android -->
+    <meta name="theme-color" content="#41b883" />
+    <!-- Optimizaciones SEO -->
+    <meta name="MobileOptimized" content="width" />
+    <meta name="HandheldFriendly" content="true" />
+    <!-- Modifica barra de estado IOS -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+
+    <title>Aplicación PWA</title>
+    <!-- Iconos -->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="./img/favicon.png" />
+    <link rel="apple-touch-startup-image" href="./img/favicon.png" />
+
+    <!-- Manifest -->
+    <link rel="manifest" href="./manifest.json" />
+
+    <!-- Hojas de estilos -->
+    <link
+      rel="stylesheet"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="https://unpkg.com/vue@next"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1 class="title">{{ title }}</h1>
+      <hr />
+      <h3 class="counter">{{ counter }}</h3>
+      <hr />
+      <div>
+        <!--
+        <button v-on:click="incrementar()">+</button>
+        <button v-on:click="decrementar()">-</button>
+        -->
+        <button v-on:click="updateCount(undefined, 6)">+</button>
+        <button v-on:click="updateCount('subs', 6)">-</button>
+      </div>
+    </div>
+    <script src="./load.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

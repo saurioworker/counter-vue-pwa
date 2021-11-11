@@ -1,0 +1,44 @@
+{
+    "name": "Contador App Vue",
+    "short_name": "Contador Vue",
+    "description": "Ejemplo de app VueJs 3",
+    "background_color": "#35495e",
+    "theme_color": "#41b883",
+    "start_url": "./?umt_source=web_app_manifest",
+    "scope": "./",
+    "lang": "es-ES",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "./img/favicon.png",
+            "sizes": "16X16",
+            "type": "image/png"
+        },
+        {
+            "src": "./img/chart_number_32.png",
+            "sizes": "32X32",
+            "type": "image/png"
+        },
+        {
+            "src": "./img/chart_number_64.png",
+            "sizes": "64x64",
+            "type": "image/png"
+        },
+        {
+            "src": "./img/chart_number_128.png",
+            "sizes": "128x128",
+            "type": "image/png"
+        },
+        {
+            "src": "./img/chart_number_256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "./img/chart_number_512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
